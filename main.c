@@ -38,7 +38,10 @@ int descending_order(int array[], int size){
 }
 
 int main(){
-    const int SIZE = 5; //定数として配列のサイズを宣言                          
+    const int SIZE = 5; //定数として配列のサイズを宣言 
+
+    printf("実行例1\n");
+
     int scores[SIZE] = {0, 60, 70, 100, 90};
     //処理コード
     
@@ -47,6 +50,17 @@ int main(){
 
     printf("results = ");
     descending_order(scores,SIZE);
+
+    printf("実行例2\n");
+
+    int scores2[6] = {100, 60, 70, 100, 90, 80};
+    
+    printf("scores2 = ");
+    output_list(scores2,SIZE);
+
+    printf("results2 = ");
+    descending_order(scores2,SIZE);
+
 
     return 0;
 }
